@@ -1,82 +1,60 @@
 {
-    "a_noite_dos_mortos_vivos": {
-      "title": "A Noite dos Mortos-Vivos",
-      "overview": "Um grupo de pessoas se refugia em uma casa isolada enquanto zumbis devoram a população ao redor. Eles lutam pela sobrevivência e enfrentam a crescente ameaça dos mortos-vivos.",
-      "company": "Continental Distributing",
-      "release_year": 1968,
-      "featured": false,
-      "cover": "path/to/night_of_the_living_dead.png"
-    },
-    "dawn_of_the_dead": {
-      "title": "Dawn of the Dead",
-      "overview": "Em um cenário pós-apocalíptico, um grupo de sobreviventes se abrigam em um shopping center enquanto tentam se adaptar à nova realidade dominada por zumbis.",
-      "company": "United Film Distribution Company",
-      "release_year": 1978,
-      "featured": false,
-      "cover": "path/to/dawn_of_the_dead.png"
-    },
-    "create": {
-      "title": "Day of the Dead",
-      "overview": "Em um bunker subterrâneo, um grupo de militares e cientistas tenta encontrar uma solução para a epidemia de zumbis enquanto a situação se torna cada vez mais desesperadora.",
-      "company": "Lionsgate Films",
-      "release_year": 1985,
-      "featured": false,
-      "cover": "path/to/day_of_the_dead.png"
-    },
-    "exterminio": {
-      "title": "Extermínio",
-      "overview": "Após um surto de vírus que transforma as pessoas em zumbis furiosos, um grupo de sobreviventes tenta escapar da devastação que tomou conta de Londres.",
-      "company": "20th Century Fox",
-      "release_year": 2002,
-      "featured": false,
-      "cover": "path/to/28_days_later.png"
-    },
-    "exterminio_2": {
-      "title": "Extermínio 2",
-      "overview": "A sequência de 'Extermínio' continua a história com um grupo de sobreviventes lutando contra uma nova onda de infecções enquanto tentam encontrar um refúgio seguro.",
-      "company": "20th Century Fox",
-      "release_year": 2007,
-      "featured": false,
-      "cover": "path/to/28_weeks_later.png"
-    },
-    "guerra_mundial_z": {
-      "title": "Guerra Mundial Z",
-      "overview": "Quando um misterioso vírus transforma a população mundial em zumbis vorazes, um ex-investigador da ONU é chamado para ajudar a encontrar a origem da pandemia e descobrir uma forma de parar a ameaça global.",
-      "company": "Paramount Pictures",
-      "release_year": 2013,
-      "featured": false,
-      "cover": "path/to/world_war_z.png"
-    },
-    "shaun_of_the_dead": {
-      "title": "Shaun of the Dead",
-      "overview": "Um comédia sobre um grupo de amigos tentando sobreviver a um apocalipse zumbi enquanto se esforçam para salvar seus relacionamentos e suas vidas.",
-      "company": "Focus Features",
-      "release_year": 2004,
-      "featured": false,
-      "cover": "path/to/shaun_of_the_dead.png"
-    },
-    "rec": {
-      "title": "REC",
-      "overview": "Durante uma cobertura de um incêndio em um prédio de apartamentos, uma repórter e sua equipe descobrem uma infecção mortal que transforma as pessoas em criaturas ferozes.",
-      "company": "Filmax",
-      "release_year": 2007,
-      "featured": false,
-      "cover": "path/to/rec.png"
-    },
-    "the_return_of_the_living_dead": {
-      "title": "The Return of the Living Dead",
-      "overview": "Dois trabalhadores de um depósito de equipamentos militares liberam acidentalmente um gás que traz zumbis de volta à vida e os torna vorazes por cérebros humanos.",
-      "company": "Orion Pictures",
-      "release_year": 1985,
-      "featured": false,
-      "cover": "path/to/return_of_the_living_dead.png"
-    },
-    "zombieland": {
-      "title": "Zombieland",
-      "overview": "Em um mundo devastado por um surto de zumbis, um grupo de sobreviventes segue suas próprias regras para lidar com a nova realidade e encontrar um local seguro.",
-      "company": "Columbia Pictures",
-      "release_year": 2009,
-      "featured": false,
-      "cover": "path/to/zombieland.png"
-    }
-  }  
+  "create": {
+    "title": "Guerra Mundial Z",
+    "overview": "Um ex-investigador da ONU é chamado para ajudar a conter uma pandemia global de zumbis que está dizimando a população mundial.",
+    "company": "Paramount Pictures",
+    "release_year": 2013,
+    "featured": true,
+    "cover": "/covers/movies/wwz.png"
+  },
+  "duplicate": {
+    "title": "Resident Evil: O Hospedeiro",
+    "overview": "Alice, uma agente de segurança, luta para sobreviver em um laboratório subterrâneo onde uma infecção transformou a equipe em zumbis.",
+    "company": "Amazon Studios",
+    "release_year": 2002,
+    "featured": false,
+    "cover": "/covers/movies/resident-evil.jpg"
+  },
+  "to_remove": {
+    "title": "A Noite dos Mortos Vivos",
+    "overview": "Um grupo de pessoas fica preso em uma casa isolada enquanto mortos-vivos atacam, forçando-os a lutar pela sobrevivência.",
+    "company": "Universal Pictures",
+    "release_year": 1968,
+    "featured": false,
+    "cover": "/covers/movies/mortos-vivos.jpg"
+  },
+  "search": {
+    "input": "zumbi",
+    "outputs": [
+      "Zumbilândia",
+      "Orgulho e Preconceito e Zumbis",
+      "Meu Namorado é um Zumbi"
+    ],
+    "data": [
+      {
+        "title": "Zumbilândia",
+        "overview": "Um grupo improvável de sobreviventes luta contra zumbis em uma jornada para encontrar um local seguro e uma última esperança para a humanidade.",
+        "company": "Sony Pictures",
+        "release_year": 2009,
+        "featured": false,
+        "cover": "/covers/movies/zumbilandia.jpg"
+      },
+      {
+        "title": "Orgulho e Preconceito e Zumbis",
+        "overview": "Em uma versão alternativa da Inglaterra do século XIX, Elizabeth Bennet e suas irmãs enfrentam zumbis e os desafios sociais de sua época.",
+        "company": "Lionsgate",
+        "release_year": 2016,
+        "featured": false,
+        "cover": "/covers/movies/opz.jpg"
+      },
+      {
+        "title": "Meu Namorado é um Zumbi",
+        "overview": "Uma jovem se apaixona por um zumbi, que luta para recuperar sua humanidade e combater a ameaça dos mortos-vivos.",
+        "company": "Fox Entertainment",
+        "release_year": 2013,
+        "featured": false,
+        "cover": "/covers/movies/warm-bodies.jpg"
+      }
+    ]
+  }
+}
