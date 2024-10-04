@@ -1,9 +1,13 @@
 const { expect } = require('@playwright/test')
 
-export class Movies {
+export class TvShows {
 
     constructor(page) {
         this.page = page
+    }
+
+    async goTvShows() {
+        await this.page.locator('a[href$="tvshows"]').click()
     }
 
     async goForm() {
@@ -14,31 +18,34 @@ export class Movies {
         await this.page.getByRole('button', { name: 'Cadastrar' }).click()
     }
 
-    async create(movie) {
+    async create(tvshow) {
 
+        await this.goTvShows()
         await this.goForm()
 
-        await this.page.getByLabel('Titulo do filme').fill(movie.title)
-        await this.page.getByLabel('Sinopse').fill(movie.overview)
+        await this.page.getByLabel('Titulo da série').fill(tvshow.title)
+        await this.page.getByLabel('Sinopse').fill(tvshow.overview)
 
         await this.page.locator('#select_company_id .react-select__indicator')
             .click()
 
         await this.page.locator('.react-select__option')
-            .filter({ hasText: movie.company })
+            .filter({ hasText: tvshow.company })
             .click()
 
         await this.page.locator('#select_year .react-select__indicator')
             .click()
 
         await this.page.locator('.react-select__option')
-            .filter({ hasText: movie.release_year })
+            .filter({ hasText: tvshow.release_year })
             .click()
 
-        await this.page.locator('input[name=cover]')
-            .setInputFiles('tests/support/fixtures' + movie.cover)
+        await this.page.getByLabel('Temporadas').fill(tvshow.season)
 
-        if (movie.featured) {
+        await this.page.locator('input[name=cover]')
+            .setInputFiles('tests/support/fixtures' + tvshow.cover)
+
+        if (tvshow.featured) {
             await this.page.locator('.featured .react-switch').click()
         }
 
@@ -46,6 +53,7 @@ export class Movies {
     }
 
     async search(target) {
+        await this.goTvShows()
         await this.page.getByPlaceholder('Busque pelo nome')
             .fill(target)
 
@@ -62,6 +70,8 @@ export class Movies {
     }
 
     async remove(title) {
+        await this.goTvShows()
+
         await this.page.getByRole('row', { name: title }).getByRole('button').click()
 
         await this.page.click('.confirm-removal')
